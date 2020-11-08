@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#4188c9">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="public/images/favicon.ico" />
+    <title>Select your server</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+    <script>
+      requirejs.config({
+          baseUrl: '.'
+      });
+    </script>
+    <!-- Dashboard Core -->
+    <link href="./public/css/dashboard.css" rel="stylesheet" />
+    <script src="./public/js/dashboard.js"></script>
+  </head>
+  <body style="background-color: #2C2F33">
+    <div class="page">
+      <div class="page-single">
+        <div class="container">
+		<h1 class="text-left text-light"><i class="fa fa-angle-right"></i> Select your server</h1>
+		<div class="row">
+		  <div class="col-sm-6 col-lg-3">
+			<div class="card">
+				<div class="card-status bg-warning"></div>
+			  <div class="card-body text-center">
+				<div class="card-category"><span class="avatar avatar-xxl" style="background-image: url('https://cdn.discordapp.com/emojis/774800973847592971.png?v=1')"></span></div>
+				<div class="card-title mt-3">Dismod+ Support</div>
+				<div class="text-center mt-6">
+				  <button type="submit" class="btn btn-warning btn-block btn-lg">Select</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-sm-6 col-lg-3">
+			<div class="card">
+				<div class="card-status bg-warning"></div>
+			  <div class="card-body text-center">
+				<div class="card-category"><span class="avatar avatar-xxl" style="background-image: url('https://cdn.discordapp.com/emojis/338808864352763904.png?v=1')"></span></div>
+				<div class="card-title mt-3">Discord Bot List</div>
+				<div class="text-center mt-6">
+				  <button type="submit" class="btn btn-warning btn-block btn-lg">Select</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-sm-6 col-lg-3">
+			<div class="card">
+				<div class="card-status bg-warning"></div>
+			  <div class="card-body text-center">
+				<div class="card-category"><span class="avatar avatar-xxl" style="background-image: url('https://cdn.discordapp.com/emojis/748892436260061214.png?v=1')"></span></div>
+				<div class="card-title mt-3">Among Us</div>
+				<div class="text-center mt-6">
+				  <button type="submit" class="btn btn-warning btn-block btn-lg">Select</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-sm-6 col-lg-3">
+			<div class="card">
+				<div class="card-status bg-warning"></div>
+			  <div class="card-body text-center">
+				<div class="card-category"><span class="avatar avatar-xxl" style="background-image: url('https://cdn.discordapp.com/emojis/758316876357959721.gif?v=1')"></span></div>
+				<div class="card-title mt-3">Among Us France</div>
+				<div class="text-center mt-6">
+				  <button type="submit" class="btn btn-warning btn-block btn-lg">Select</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            document.body.style.display = "block"
+            $.fn.extend({
+                disableSelection: function() {
+                    this.each(function() {
+                        if (typeof this.onselectstart != 'undefined') {
+                            this.onselectstart = function() {
+                                return false;
+                            };
+                        } else if (typeof this.style.MozUserSelect != 'undefined') {
+                            this.style.MozUserSelect = 'none';
+                        } else {
+                            this.onmousedown = function() {
+                                return false;
+                            };
+                        }
+                    });
+                }
+            });
+            $(document).ready(function() {
+                $('body').disableSelection();
+        </script>
+  </body>
+</html>
